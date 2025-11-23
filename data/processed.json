@@ -1,0 +1,50 @@
+{
+    "email_1": {
+        "sender": "manager@company.com",
+        "subject": "Weekly Report Reminder",
+        "timestamp": "2025-01-10 09:15",
+        "content": "Hi, please send the weekly progress report by 2 PM tomorrow. Include completed tasks and blockers.",
+        "category": "{\"category\": \"Urgent\"}",
+        "action_items": "{\n  \"tasks\": [\n    {\n      \"task\": \"Send the weekly progress report\",\n      \"deadline\": \"Tomorrow (2 PM)\",\n      \"owner\": \"\"\n    }\n  ]\n}"
+    },
+    "email_2": {
+        "sender": "newsletter@techinsights.com",
+        "subject": "AI Trends \u00e2\u20ac\u201c January Edition",
+        "timestamp": "2025-01-09 14:22",
+        "content": "Here are the latest industry updates: breakthroughs in LLM efficiency, new ML security standards, and upcoming conferences.",
+        "category": "{\"category\": \"Newsletter\"}",
+        "action_items": "{ \"tasks\": [] }"
+    },
+    "email_3": {
+        "sender": "hr@company.com",
+        "subject": "Policy Update \u00e2\u20ac\u201c Action Required",
+        "timestamp": "2025-01-08 16:40",
+        "content": "Please review and acknowledge the updated remote-work policy by Friday. The acknowledgment form is attached.",
+        "category": "{\"category\": \"Urgent\"}",
+        "action_items": "{\n  \"tasks\": [\n    {\n      \"task\": \"Review and acknowledge the updated remote-work policy\",\n      \"deadline\": \"Friday\",\n      \"owner\": \"Unknown\"\n    }\n  ]\n}"
+    },
+    "email_4": {
+        "sender": "calendar@company.com",
+        "subject": "Meeting Request \u00e2\u20ac\u201c Sprint Planning",
+        "timestamp": "2025-01-11 11:03",
+        "content": "You are invited to Sprint Planning on Monday at 10 AM. Please confirm your availability and share agenda items.",
+        "category": "{\"category\": \"Meeting\"}",
+        "action_items": "{\n  \"tasks\": [\n    {\n      \"task\": \"Confirm availability\",\n      \"deadline\": null,\n      \"owner\": \"Recipient\"\n    },\n    {\n      \"task\": \"Share agenda items\",\n      \"deadline\": null,\n      \"owner\": \"Recipient\"\n    }\n  ]\n}"
+    },
+    "email_5": {
+        "sender": "no-reply@randomoffer.com",
+        "subject": "You won a FREE iPhone!",
+        "timestamp": "2025-01-07 03:18",
+        "content": "Congratulations! Click the link below to claim your prize now. Offer expires today!",
+        "category": "{\"category\": \"Spam\"}",
+        "action_items": "{ \"tasks\": [] }"
+    },
+    "email_6": {
+        "sender": "alerts@monitoring-system.com",
+        "subject": "Critical System Alert \u00e2\u20ac\u201c Immediate Attention",
+        "timestamp": "2025-01-15 01:22",
+        "content": "High CPU usage detected on production server node-3. Please investigate and confirm resolution status.",
+        "category": "{\"category\": \"Spam\"}",
+        "action_items": "{\n  \"tasks\": [\n    {\n      \"task\": \"Investigate high CPU usage on production server node-3\",\n      \"deadline\": null,\n      \"owner\": \"unknown\"\n    }\n  ]\n}"
+    }
+}
