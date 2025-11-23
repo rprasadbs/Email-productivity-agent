@@ -1,1 +1,4 @@
-
+{
+    "reply_email_1": "{\n  \"subject\": \"Re: Weekly Report Reminder\",\n  \"body\": \"Thank you for the reminder! I've taken note of the deadline. However, could you please provide me with a suggested meeting to discuss the report, including the proposed time? This will help me plan accordingly.\",\n  \"follow_ups\": [],\n  \"metadata\": {\n    \"category\": {\"category\": \"Ongoing\"},\n    \"action_items\": {\"tasks\": []}\n  }\n}",
+    "new_4e34ef91": "{\n  \"subject\": \"Weekly Report Reminder\",\n  \"body\": \"Hi, just to confirm, I've received your request for the weekly progress report. Could you please provide me with a detailed report by 2 PM tomorrow, including completed tasks and blockers? Also, could you let me know if there's an agenda or proposed time for our meeting scheduled for tomorrow? Looking forward to reviewing your report.\",\n  \"follow_ups\": [\"Could you confirm receipt of the report?\", \"Discuss potential blockers during our call\"],\n  \"metadata\": {\n    \"category\": \"{\\\" Urgent\\\"}\",\n    \"action_items\": {\"tasks\": []}\n  }\n}"
+}
