@@ -1,0 +1,5 @@
+{
+    "categorization": "Categorize this email into one of the following:\nUrgent, Follow-Up, Meeting, Newsletter, Spam, Personal, To-Do.\nAssign only one category and respond with:\n{ \"category\": \"<label>\" }\n",
+    "action": "Extract all action items from the email.\nRespond in JSON list format:\n{\n  \"tasks\": [\n     { \"task\": \"...\", \"deadline\": \"...\", \"owner\": \"...\" }\n  ]\n}\nIf no tasks exist, return:\n{ \"tasks\": [] }\n",
+    "reply": "Write a professional reply using a friendly and concise tone.\nIf it's a meeting request, ask for agenda and proposed time.\nIf it's a task request, confirm receipt and expected completion date.\nDo NOT send the reply \u2014 only draft it.\n"
+}
