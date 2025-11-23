@@ -1,0 +1,181 @@
+#  Email Productivity Agent (Ollama-Powered)
+
+An intelligent, **prompt-driven email productivity system** that can:
+
+ Categorize emails  
+ Extract action items  
+ Generate reply drafts  
+ Provide chat-based interaction  
+ Save & edit drafts safely (never sends emails)  
+
+Built with **Streamlit + Python + Ollama** — no cloud LLM required 
+
+---
+
+##  Features
+
+### Phase 1: Email Ingestion & Prompt Brain
+- Load inbox from mock JSON
+- View sender, subject, timestamp, and category
+- Edit & save custom prompts:
+  - Categorization
+  - Action-item extraction
+  - Auto-reply drafting
+
+### Phase 2: Email Processing Agent
+- Select any email
+- Ask:
+  - “summarize this email”
+  - “what tasks do I need to do?”
+  - “draft a reply in friendly tone”
+- Detect urgent emails automatically
+
+### Phase 3: Draft Generation Agent
+- Generate new emails from instructions
+- Auto-draft replies using tone + thread context
+- View, edit, and save drafts
+- Stored safely — **never sends emails**
+
+---
+
+##  Project Structure
+email-productivity-agent/
+│ app.py
+│ requirements.txt
+│ README.md
+│
+├── backend/
+│ ├── agent.py
+│ ├── ingestion.py
+│ ├── llm_client.py
+│ ├── storage.py
+│ └── init.py
+│
+├── mock_inbox/
+│ └── inbox.json # 20 sample emails
+│
+├── data/
+│ ├── processed.json # auto-generated after processing
+│ └── drafts.json # auto-generated when drafts are created
+│
+└── prompts/
+└── default_prompts.json
+
+
+---
+
+##  Requirements
+
+Install dependencies:
+
+streamlit==1.32.0
+requests==2.31.0
+python-dotenv==1.0.1
+
+
+Install:
+
+```bash
+pip install -r requirements.txt
+Ollama Setup
+
+Install Ollama:
+https://ollama.ai/download
+
+Start Ollama:
+ollama serve
+Pull a model (example):
+
+ollama pull llama3
+
+
+Test:
+
+ollama run llama3 "hello"
+
+
+If you get a response — you're ready.
+
+How to Run the App
+1. Start Streamlit
+streamlit run app.py
+
+2. In the UI:
+ Load Inbox
+
+Click Load Inbox
+→ loads 20 mock emails
+
+ Process Emails
+
+Click Process Emails
+→ categorizes + extracts tasks
+
+ Configure Prompts
+
+Use the Prompt Brain sidebar to:
+
+edit categorization
+
+change task extraction format
+
+rewrite auto-reply style
+
+Click Save Prompts
+
+ Email Agent Chat
+
+Select an email
+
+Ask:
+
+summarize
+
+what tasks do I need to do?
+
+explain this email
+
+ Draft Replies
+
+Choose a tone (Formal / Friendly / Direct)
+
+Click Draft Reply
+
+View generated JSON output
+
+ Show Urgent Emails
+
+Click Show Urgent Emails
+
+ Generate New Email
+
+Enter:
+
+Write an email requesting project status update
+
+
+Click Create Draft
+
+ Saved Drafts
+
+View draft list
+
+Edit draft JSON
+
+Save changes
+
+ Default Prompt Templates
+Categorization
+Categorize this email into: Important, Newsletter, Spam, To-Do.
+
+Action Item Extraction
+Extract tasks from this email and respond ONLY in JSON:
+{ "tasks": [{ "task": "...", "deadline": "..."}]}
+
+Auto-Reply Draft
+Draft a polite reply based on the email context.
+ Safety
+
+ No email sending functionality
+ All drafts stored locally
+ LLM errors handled gracefully
