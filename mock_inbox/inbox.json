@@ -1,0 +1,93 @@
+{
+  "email_1": {
+    "sender": "manager@company.com",
+    "subject": "Weekly Report Reminder",
+    "timestamp": "2025-01-10 09:15",
+    "content": "Hi, please send the weekly progress report by 2 PM tomorrow. Include completed tasks and blockers.",
+    "category": "To-Do",
+    "action_items": {
+      "tasks": [
+        {
+          "task": "Send weekly progress report",
+          "deadline": "2025-01-11",
+          "owner": "me"
+        }
+      ]
+    }
+  },
+  "email_2": {
+    "sender": "newsletter@techinsights.com",
+    "subject": "AI Trends – January Edition",
+    "timestamp": "2025-01-09 14:22",
+    "content": "Here are the latest industry updates: breakthroughs in LLM efficiency, new ML security standards, and upcoming conferences.",
+    "category": "Newsletter",
+    "action_items": { "tasks": [] }
+  },
+  "email_3": {
+    "sender": "hr@company.com",
+    "subject": "Policy Update – Action Required",
+    "timestamp": "2025-01-08 16:40",
+    "content": "Please review and acknowledge the updated remote-work policy by Friday. The acknowledgment form is attached.",
+    "category": "To-Do",
+    "action_items": {
+      "tasks": [
+        {
+          "task": "Review remote-work policy",
+          "deadline": "2025-01-10",
+          "owner": "me"
+        },
+        {
+          "task": "Acknowledge policy update",
+          "deadline": "2025-01-10",
+          "owner": "me"
+        }
+      ]
+    }
+  },
+  "email_4": {
+    "sender": "calendar@company.com",
+    "subject": "Meeting Request – Sprint Planning",
+    "timestamp": "2025-01-11 11:03",
+    "content": "You are invited to Sprint Planning on Monday at 10 AM. Please confirm your availability and share agenda items.",
+    "category": "Meeting",
+    "action_items": {
+      "tasks": [
+        {
+          "task": "Confirm availability",
+          "deadline": "2025-01-13",
+          "owner": "me"
+        },
+        {
+          "task": "Share agenda items",
+          "deadline": null,
+          "owner": "me"
+        }
+      ]
+    }
+  },
+  "email_5": {
+    "sender": "no-reply@randomoffer.com",
+    "subject": "You won a FREE iPhone!",
+    "timestamp": "2025-01-07 03:18",
+    "content": "Congratulations! Click the link below to claim your prize now. Offer expires today!",
+    "category": "Spam",
+    "action_items": { "tasks": [] }
+  },
+  
+  "email_6": {
+    "sender": "alerts@monitoring-system.com",
+    "subject": "Critical System Alert – Immediate Attention",
+    "timestamp": "2025-01-15 01:22",
+    "content": "High CPU usage detected on production server node-3. Please investigate and confirm resolution status.",
+    "category": "Urgent",
+    "action_items": {
+      "tasks": [
+        {
+          "task": "Investigate high CPU usage",
+          "deadline": "2025-01-15",
+          "owner": "devops"
+        }
+      ]
+    }
+  }
+}
